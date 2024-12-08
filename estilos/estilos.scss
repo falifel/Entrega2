@@ -1,0 +1,270 @@
+$colorBlanco:#FEFEE6;
+$colorNavBar:#F7C37A;
+$colorBorde:#B0B2B1;
+$colorSombra:#8C877F;
+$colorSubmenu:#C7A87C;
+$fontFamily:"AR one sans", "sans-serif";
+$cornerRadius:15px;
+
+
+body, html, main {
+    min-height: 100vh;
+    background-color: $colorBlanco;
+    display: flex;
+    flex-direction: column;
+    background: url('../img/logoFondo.png') no-repeat center;
+    background-size: 600px;
+  }
+
+/* PERSONALIZANDO NAVBAR BOOTSTRAP */
+
+.navbar{
+    background-color: $colorNavBar;
+    border-bottom:1px solid $colorBorde;
+    font-family: $fontFamily;
+    font-size: 18px;
+    z-index: 3;
+  }
+   
+  .navbar-brand{
+    color:$colorBlanco;
+    :hover{
+        color:$colorSombra;
+    }
+
+  }
+  
+  .bg-body-tertiary{
+    background-color: $colorNavBar !important;
+  }
+  
+  .dropdown-menu{
+    padding: 20px;
+    background-color: $colorNavBar;
+    box-shadow: 0px 2px 2px 0px $colorSombra;
+
+    a{
+        border-radius: 5px;
+    }
+    a:hover{
+        background-color: $colorSubmenu;
+    }
+  }
+  
+  .dropdown-item.active, .dropdown-item:active {
+    color: var(--bs-dropdown-link-active-color);
+    text-decoration: none;
+    background-color: $colorSubmenu;
+  }
+
+
+  /* ESTILOS SUBmenu LOGIN */
+
+.cajaLogin{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-family: $fontFamily;
+    font-size: 16px;
+    margin-bottom: 15px;
+
+    input{
+        margin-left: 5px;
+    }
+  
+  }
+
+  .centrado{
+    justify-content: center;
+    align-items: center;
+  }
+  
+  
+  .cajaLoginBoton{
+    display: flex;
+    flex-direction: row;
+    @extend .centrado;
+    font-family: $fontFamily;
+    font-size: 16px;
+    margin-bottom: 15px;
+  }
+  
+  
+  .btnIngresar{
+    background-color: $colorNavBar;
+    text-align: center;
+    border-color: 1px solid $colorBorde;
+    border-radius: 5px;
+    font-weight: bold;
+
+    a{
+        text-decoration: none;
+        color:$colorBlanco;
+        margin: 5px;
+    }
+
+    :hover{
+        background-color: $colorSubmenu;
+    }
+  }
+
+
+ /* ESTILO CONTENIDO CENTRAL */
+
+
+#contenido{
+  
+  width: 100%;
+  height: 89.5%;
+  text-align: center;
+  z-index: 1;
+  
+}
+
+.cajaContenido{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: $colorNavBar;
+  border-radius: $cornerRadius;
+  padding: 20px;
+  height: 60%;
+  border:1px solid $colorBorde; 
+  box-shadow: 0px 8px 8px 0px $colorSombra;
+  z-index: 2;
+  @extend .centrado;
+  display: flex;
+  flex-direction: column;
+
+  img{
+    border-radius: $cornerRadius;
+    height: 60%;
+    margin-bottom: 20px;
+  }
+
+  h1{
+    font-family: $fontFamily;
+    font-size: 22px;
+    margin: 20px;
+    color: $colorBlanco;
+    text-align: center;
+  }
+
+}
+
+
+/* ESTILO CARRUSEL */
+
+.slide {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100vh;
+  box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.64);
+  border-radius: $cornerRadius;
+
+}
+
+.carousel-item img{
+  border-radius: $cornerRadius;
+}
+
+.carousel-control-prev-icon {
+  background-color: #312718;
+  border-radius: 5px;
+}
+
+
+.carousel-control-next-icon{
+  background-color: #312718;
+  border-radius: 5px;
+}
+
+.carousel-caption {
+  background: rgba(0,0,0,0.5);
+  border-radius: 5px;
+}
+
+
+/* ESTILO RESPONSIVE */
+@media only screen and (max-width: 767px) {
+  .slide{
+    width: 40vh;
+  }
+
+  .d-none{
+    display: flow !important;
+  }
+
+  .cajaLogin input {
+  
+    width: 18vh;
+    }
+}
+
+
+
+
+
+
+
+
+/* ESTILO PIE */
+.foot{
+  background-color: $colorNavBar;
+  height: 48px;
+  width: 100%;
+  border-top:1px solid $colorBorde;
+  text-align: center;
+  display:flex;
+  @extend .centrado;
+  position: fixed;
+  bottom: 0;
+}
+  
+  
+/* ESTILOS ANIMACION */
+/* ESTILOS ANIMACIÓN */
+$pathNumber: 18;
+
+// The color that will be at the beginning and the end of the loop.
+$firstColor: $colorNavBar;
+
+// The list of all the used colors. You can add or remove colors, the animation stays fluid.
+// Ensure $firstColor is included at the end.
+$listColors: (#DFB67B,  #C7A87C, #B09B7E, #988D7F, $firstColor);
+
+$delayCoeff: 0.1s;
+
+
+  
+#svg {
+    display: inline-block;
+    vertical-align: middle;
+    fill: $firstColor;
+    
+    @for $i from 1 through $pathNumber {
+        path:nth-child(#{$i}) {
+            animation: pweek $delayCoeff * $pathNumber linear infinite;
+            animation-delay: $i * $delayCoeff;
+
+            &:hover {
+                animation-play-state: paused;
+            }
+        }
+    }
+}
+
+@keyframes pweek {
+    0% {
+        fill: $firstColor;
+    }
+    @for $i from 1 through length($listColors) {
+        #{($i - 1) * (100% / length($listColors))} {
+            fill: nth($listColors, $i);
+        }
+    }
+}
