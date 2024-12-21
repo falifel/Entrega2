@@ -3,8 +3,11 @@
     <head>
         <meta http-equiv="content-type" content="text/html; charset=UTF-8"><meta charset="UTF-8"><meta content="origin" name="referrer">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        
+        <meta name="description" content="Este es un software de gestion para todo lo necesario dentro de una cocina. Organiza tus platos, con sus recetas, escandallos, proovedores y mucho mas.">
+        <meta name="keywords" content="recetas, cocina, gastronomía, recetas de cocina, platos, comida, ingredientes, escandallos, gestor, biblioteca">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=AR+One+Sans|Aclonica">    
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">     
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
         <link rel="stylesheet" type="text/css" href="estilos/estilos.css" />
         <title>Gestor de cocina</title>
@@ -25,84 +28,278 @@
                       </a>
                       <ul class="dropdown-menu">
                         <li><a class="dropdown-item" href="platos.html">Platos</a></li>
-                        <li><a class="dropdown-item" href="menu.html">Menu</a></li>
                         <li><a class="dropdown-item" href="recetas.html">Recetas</a></li>
                         <li><a class="dropdown-item active" href="escandallos.html">Escandallos</a></li>
                       </ul>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link"  href="construccionP.html">Proovedores</a>
+                      <a class="nav-link"  href="proovedores.html">Proovedores</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="construccionB.html">Biblioteca</a>
+                      <a class="nav-link" href="biblioteca.html">Biblioteca</a>
                     </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="construccionE.html">Empleados</a>
-                    </li>
+
                   </ul>
                 </div>
               </div>
             </nav></header>
         
-        <section><div id="contenido">
-            <div class="slide">
-            <div id="carouselExampleCaptions" class="carousel slide">
-                <div class="carousel-indicators">
-                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <section>
+              <div class="titulo-pagina">
+                <h1 class="hero-title">ESCANDALLOS</h1>
+                <p class="hero-subtitle">Saca los escandallos de tus platos de forma rápida y sencilla.</p>
+              </div>
+                <div class="slide">
+                <div id="carouselExampleCaptions" class="carousel slide">
+    
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                      
+                        <div class="carousel-caption caption-completa d-none d-md-block">
+                          <section id="recipe">
+                                <!-- Recipe 2 -->
+                                <div class="container">
+                                  <!-- Escandallo 1: Ensalada César -->
+                                  <div class="row">
+                                      <div class="col-12">
+                                          <h2>Ensalada César</h2>
+                                      </div>
+                                  </div>
+                                  <div class="row">
+                                      <div class="col-12 d-flex flex-wrap align-items-start">
+                                          <!-- Imagen del plato -->
+                                          <div class="flex-item" style="flex: 1;">
+                                              <img src="img/escandallocesar.jpg" alt="Ensalada César" width="150px" class="recipe-picture" />
+                                          </div>
+                                          <!-- Ingredientes -->
+                                          <div class="flex-item" style="flex: 2; padding-left: 20px;">
+                                              <h3>Ingredientes</h3>
+                                              <div class="d-flex flex-column">
+                                                  <div class="d-flex justify-content-between mb-2">
+                                                      <span>Lechuga romana</span>
+                                                      <span>200 g</span>
+                                                      <span>2.50 €/kg</span>
+                                                      <span>0.50 €</span>
+                                                  </div>
+                                                  <div class="d-flex justify-content-between mb-2">
+                                                      <span>Pechuga de pollo</span>
+                                                      <span>150 g</span>
+                                                      <span>6.00 €/kg</span>
+                                                      <span>0.90 €</span>
+                                                  </div>
+                                                  <div class="d-flex justify-content-between mb-2">
+                                                      <span>Queso parmesano</span>
+                                                      <span>50 g</span>
+                                                      <span>20.00 €/kg</span>
+                                                      <span>1.00 €</span>
+                                                  </div>
+                                                  <div class="d-flex justify-content-between mb-2">
+                                                      <span>Pan para croutons</span>
+                                                      <span>50 g</span>
+                                                      <span>4.00 €/kg</span>
+                                                      <span>0.20 €</span>
+                                                  </div>
+                                                  <div class="d-flex justify-content-between mb-2">
+                                                      <span>Salsa César</span>
+                                                      <span>50 ml</span>
+                                                      <span>10.00 €/L</span>
+                                                      <span>0.50 €</span>
+                                                  </div>
+                                                  <div class="d-flex justify-content-between mt-3">
+                                                      <strong>Total</strong>
+                                                      <strong>3.10 €</strong>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>
+                          
+                          </section>
+                        </div>
+                      </div>
+
+
+                      <div class="carousel-item">
+                      
+                        <div class="carousel-caption caption-completa d-none d-md-block">
+    
+                          <section id="recipe">
+                            
+                          <!-- Recipe 3 -->
+                          <div class="container">
+                          <!-- Escandallo 3: Lasaña de Carne -->
+<div class="row">
+  <div class="col-12">
+      <h2>Lasaña de Carne</h2>
+  </div>
+</div>
+<div class="row">
+  <div class="col-12 d-flex flex-wrap align-items-start">
+      <!-- Imagen del plato -->
+      <div class="flex-item" style="flex: 1;">
+          <img src="img/escandallolasagna.jpeg" alt="Lasaña de Carne" width="150px" class="recipe-picture" />
+      </div>
+      <!-- Ingredientes -->
+      <div class="flex-item" style="flex: 2; padding-left: 20px;">
+          <h3>Ingredientes</h3>
+          <div class="d-flex flex-column">
+              <div class="d-flex justify-content-between mb-2">
+                  <span>Placas de lasaña</span>
+                  <span>200 g</span>
+                  <span>3.00 €/kg</span>
+                  <span>0.60 €</span>
+              </div>
+              <div class="d-flex justify-content-between mb-2">
+                  <span>Carne picada</span>
+                  <span>300 g</span>
+                  <span>7.00 €/kg</span>
+                  <span>2.10 €</span>
+              </div>
+              <div class="d-flex justify-content-between mb-2">
+                  <span>Salsa de tomate</span>
+                  <span>150 g</span>
+                  <span>2.00 €/kg</span>
+                  <span>0.30 €</span>
+              </div>
+              <div class="d-flex justify-content-between mb-2">
+                  <span>Queso rallado</span>
+                  <span>100 g</span>
+                  <span>10.00 €/kg</span>
+                  <span>1.00 €</span>
+              </div>
+              <div class="d-flex justify-content-between mb-2">
+                  <span>Bechamel</span>
+                  <span>200 ml</span>
+                  <span>4.00 €/L</span>
+                  <span>0.80 €</span>
+              </div>
+              <div class="d-flex justify-content-between mt-3">
+                  <strong>Total</strong>
+                  <strong>4.80 €</strong>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+                      </div>
+                      </section>
+                      </div>
+                      </div>
+    
+                      <div class="carousel-item ">
+                         
+                        <div class="carousel-caption caption-completa d-none d-md-block">
+                          <section id="recipe">
+                            <div class="container">
+                              <div class="row">
+                                <div class="col-12">
+                                  <h2>Tortilla de Patatas</h2>
+                              </div>
+                          </div>
+                          <div class="row">
+                              <div class="col-12 d-flex flex-wrap align-items-start">
+                                  <!-- Imagen del plato -->
+                                  <div class="flex-item" style="flex: 1;">
+                                      <img src="img/escandallotortilla.jpg" alt="Tortilla de Patatas" width="150px" class="recipe-picture" />
+                                  </div>
+                                  <!-- Ingredientes -->
+                                  <div class="flex-item" style="flex: 2; padding-left: 20px;">
+                                      <h3>Ingredientes</h3>
+                                      <div class="d-flex flex-column">
+                                          <div class="d-flex justify-content-between mb-2">
+                                              <span>Patatas</span>
+                                              <span>300 g</span>
+                                              <span>1.00 €/kg</span>
+                                              <span>0.30 €</span>
+                                          </div>
+                                          <div class="d-flex justify-content-between mb-2">
+                                              <span>Huevos</span>
+                                              <span>4 unidades</span>
+                                              <span>0.20 €/unidad</span>
+                                              <span>0.80 €</span>
+                                          </div>
+                                          <div class="d-flex justify-content-between mb-2">
+                                              <span>Cebolla</span>
+                                              <span>100 g</span>
+                                              <span>1.50 €/kg</span>
+                                              <span>0.15 €</span>
+                                          </div>
+                                          <div class="d-flex justify-content-between mb-2">
+                                              <span>Aceite de oliva</span>
+                                              <span>50 ml</span>
+                                              <span>5.00 €/L</span>
+                                              <span>0.25 €</span>
+                                          </div>
+                                          <div class="d-flex justify-content-between mb-2">
+                                              <span>Sal</span>
+                                              <span>5 g</span>
+                                              <span>0.50 €/kg</span>
+                                              <span>0.01 €</span>
+                                          </div>
+                                          <div class="d-flex justify-content-between mt-3">
+                                              <strong>Total</strong>
+                                              <strong>1.51 €</strong>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                              </div>
+                            </div>
+                            </section>
+                        </div>
+                      </div>
+    
+                      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                      </button>
+                      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                      </button>
+    
+                      <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                      </div>
+                    </div>
+    
+                  </div>
                 </div>
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <img src="img/escandallos.jpg" class="d-block w-100" alt="escandallo 1">
-                    <div class="carousel-caption d-none d-md-block">
-                      <h5>Escandallo 1</h5>
-                      <p>Descripción completa del escandallo</p>
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    <img src="img/escandallos.jpg" class="d-block w-100" alt="escandallo 2">
-                    <div class="carousel-caption d-none d-md-block">
-                      <h5>Escandallo 2</h5>
-                      <p>Descripción completa del escandallo</p>
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    <img src="img/escandallos.jpg" class="d-block w-100" alt="escandallo 3">
-                    <div class="carousel-caption d-none d-md-block">
-                      <h5>Escandallo 3</h5>
-                      <p>Descripción completa del escandallo</p>
-                    </div>
-                  </div>
+            </div>
+          </section>
+    
+    
+          <footer>
+        
+        
+            <div class="container">
+              <div class="row">
+                <div class="col-md-8 col-sm-6 col-xs-12">
+                  <p class="copyright-text">Copyright &copy; 2024 All Rights Reserved by
+                    <a href="#">Gestor de cocina</a>.
+                  </p>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Next</span>
-                </button>
+          
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                  <ul class="social-icons">
+                    <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+                    <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+                    <li><a class="dribbble" href="#"><i class="fa fa-dribbble"></i></a></li>
+                    <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>
+                  </ul>
+                </div>
               </div>
             </div>
-        </div>
-
+          </footer>
+            
     
-        </div>
-      </section>
-      <footer>
-     <div class="foot">
-        <div id="textoFoot">
-            <h4>@RMSapps</h4>
-        </div>
-      </div>
-      </footer>
-        
-        
-
-     
-
-     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-</main>
-</body>
-</html>
+         
+    
+         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    </main>
+    </body>
+    </html>

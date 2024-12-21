@@ -3,8 +3,11 @@
     <head>
         <meta http-equiv="content-type" content="text/html; charset=UTF-8"><meta charset="UTF-8"><meta content="origin" name="referrer">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        
+        <meta name="description" content="Este es un software de gestion para todo lo necesario dentro de una cocina. Organiza tus platos, con sus recetas, escandallos, proovedores y mucho mas.">
+        <meta name="keywords" content="recetas, cocina, gastronomía, recetas de cocina, platos, comida, ingredientes, escandallos, gestor, biblioteca">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=AR+One+Sans|Aclonica">    
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">  
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
         <link rel="stylesheet" type="text/css" href="estilos/estilos.css" />
         <title>Gestor de cocina</title>
@@ -25,78 +28,431 @@
                       </a>
                       <ul class="dropdown-menu">
                         <li><a class="dropdown-item" href="platos.html">Platos</a></li>
-                        <li><a class="dropdown-item" href="menu.html">Menu</a></li>
                         <li><a class="dropdown-item active" href="recetas.html">Recetas</a></li>
                         <li><a class="dropdown-item" href="escandallos.html">Escandallos</a></li>
                       </ul>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link"  href="construccionP.html">Proovedores</a>
+                      <a class="nav-link"  href="proovedores.html">Proovedores</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="construccionB.html">Biblioteca</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="construccionE.html">Empleados</a>
+                      <a class="nav-link" href="biblioteca.html">Biblioteca</a>
                     </li>
                   </ul>
                 </div>
               </div>
             </nav></header>
         
-        <section><div id="contenido">
+        <section>
+          <div class="titulo-pagina">
+            <h1 class="hero-title">RECETAS</h1>
+            <p class="hero-subtitle">Actualiza tus recetas, menús, manten al día tu carta.</p>
+          </div>
             <div class="slide">
             <div id="carouselExampleCaptions" class="carousel slide">
-                <div class="carousel-indicators">
-                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                </div>
+
                 <div class="carousel-inner">
                   <div class="carousel-item active">
-                    <img src="img/recetas.jpg" class="d-block w-100" alt="receta 1">
-                    <div class="carousel-caption d-none d-md-block">
-                      <h5>Receta 1</h5>
-                      <p>Descripción completa de la receta</p>
+                  
+                    <div class="carousel-caption caption-completa d-none d-md-block">
+                      <section id="recipe">
+                            <!-- Recipe 2 -->
+    <div class="container">
+      <div class="row">
+          <div class="col-12">
+              <h2>Paella de mariscos</h2>
+          </div>
+      </div>
+      <div class="row vertical-align">
+          <div class="col-12">
+              <div class="contenedorFlex">
+                  <img src="img/recetapaella.jpg" alt="foto paella de mariscos" width="150px" class="recipe-picture" />
+                  <div class="col-md-4 pull-right wow lightSpeedIn">
+                      <div class="recipe-info">
+                          <h3>Info</h3>
+                          <div class="row">
+                              <div class="col-2 text-center">
+                                  <i class="fa fa-clock-o" aria-hidden="true"></i>
+                              </div>
+                              <div class="col-6">Tiempo</div>
+                              <div class="col-4">1:30 H</div>
+                          </div>
+                          <div class="row">
+                              <div class="col-2 text-center">
+                                  <i class="fa fa-area-chart" aria-hidden="true"></i>
+                              </div>
+                              <div class="col-6">Dificultad</div>
+                              <div class="col-4">
+                                  <i class="fa fa-star" aria-hidden="true"></i>
+                                  <i class="fa fa-star" aria-hidden="true"></i>
+                                  <i class="fa fa-star" aria-hidden="true"></i>
+                              </div>
+                          </div>
+                          <div class="row">
+                              <div class="col-2 text-center">
+                                  <i class="fa fa-users" aria-hidden="true"></i>
+                              </div>
+                              <div class="col-6">Comensales</div>
+                              <div class="col-4">4</div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="row wow slideInUp">
+          <div class="col-12">
+              <div class="recipe-ingredients">
+                  <h3>Ingredientes</h3>
+                  <dl class="ingredients-list">
+                      <dd>500 g de arroz</dd>
+                      <dd>300 g de gambas</dd>
+                      <dd>200 g de almejas</dd>
+                      <dd>1 pimiento rojo</dd>
+                      <dd>1 litro de caldo de pescado</dd>
+                  </dl>
+              </div>
+          </div>
+      </div>
+      <div class="row wow slideInUp">
+          <div class="col-12">
+              <div class="recipe-directions">
+                  <h3>Elaboración</h3>
+                  <ol>
+                    <li>Calienta el aceite en una paellera y sofríe el pimiento rojo cortado en tiras hasta que esté tierno. Retira y reserva.</li>
+                    <li>En el mismo aceite, sofríe las gambas hasta que cambien de color. Retíralas y resérvalas.</li>
+                    <li>Sofríe las almejas hasta que se abran. Retíralas y resérvalas para decorar al final.</li>
+                    <li>Añade el arroz a la paellera y sofríelo durante 2 minutos para que absorba el sabor del aceite.</li>
+                    <li>Incorpora el caldo de pescado caliente poco a poco y cocina a fuego medio, removiendo ocasionalmente.</li>
+                    <li>Cuando el arroz esté casi en su punto, coloca las gambas, las almejas y el pimiento rojo encima para decorar. Cocina durante 5 minutos más sin remover.</li>
+                    <li>Apaga el fuego y deja reposar la paella tapada con un paño limpio durante 10 minutos antes de servir.</li>
+                  </ol>
+              </div>
+          </div>
+      </div>
+  </div>
+                      </section>
                     </div>
                   </div>
                   <div class="carousel-item">
-                    <img src="img/recetas.jpg" class="d-block w-100" alt="receta 2">
-                    <div class="carousel-caption d-none d-md-block">
-                      <h5>Receta 2</h5>
-                      <p>Descripción completa de la receta</p>
+                  
+                    <div class="carousel-caption caption-completa d-none d-md-block">
+
+                      <section id="recipe">
+                        
+    <!-- Recipe 3 -->
+    <div class="container">
+      <div class="row">
+          <div class="col-12">
+              <h2>Brownies de chocolate</h2>
+          </div>
+      </div>
+      <div class="row vertical-align">
+          <div class="col-12">
+              <div class="contenedorFlex">
+                  <img src="img/recetabrownie.jpg" alt="foto brownies de chocolate" width="150px" class="recipe-picture" />
+                  <div class="col-md-4 pull-right wow lightSpeedIn">
+                      <div class="recipe-info">
+                          <h3>Info</h3>
+                          <div class="row">
+                              <div class="col-2 text-center">
+                                  <i class="fa fa-clock-o" aria-hidden="true"></i>
+                              </div>
+                              <div class="col-6">Tiempo</div>
+                              <div class="col-4">0:45 H</div>
+                          </div>
+                          <div class="row">
+                              <div class="col-2 text-center">
+                                  <i class="fa fa-area-chart" aria-hidden="true"></i>
+                              </div>
+                              <div class="col-6">Dificultad</div>
+                              <div class="col-4">
+                                  <i class="fa fa-star" aria-hidden="true"></i>
+                                  <i class="fa fa-star" aria-hidden="true"></i>
+                              </div>
+                          </div>
+                          <div class="row">
+                              <div class="col-2 text-center">
+                                  <i class="fa fa-users" aria-hidden="true"></i>
+                              </div>
+                              <div class="col-6">Comensales</div>
+                              <div class="col-4">8</div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="row wow slideInUp">
+          <div class="col-12">
+              <div class="recipe-ingredients">
+                  <h3>Ingredientes</h3>
+                  <dl class="ingredients-list">
+                      <dd>200 g de chocolate negro</dd>
+                      <dd>150 g de mantequilla</dd>
+                      <dd>200 g de azúcar</dd>
+                      <dd>100 g de harina</dd>
+                      <dd>4 huevos</dd>
+                  </dl>
+              </div>
+          </div>
+      </div>
+      <div class="row wow slideInUp">
+          <div class="col-12">
+              <div class="recipe-directions">
+                  <h3>Elaboración</h3>
+                  <ol>
+                    <li>Derrite el chocolate y la mantequilla al baño maría o en el microondas, removiendo hasta que la mezcla sea homogénea. Deja enfriar un poco.</li>
+                    <li>En un bol aparte, bate los huevos con el azúcar hasta que la mezcla sea espumosa y aumente de volumen.</li>
+                    <li>Incorpora la mezcla de chocolate y mantequilla a los huevos batidos, mezclando con movimientos envolventes.</li>
+                    <li>Tamiza la harina e incorpórala a la mezcla junto con una pizca de sal. Remueve hasta que esté todo bien integrado.</li>
+                    <li>Vierte la mezcla en un molde previamente engrasado o forrado con papel de hornear.</li>
+                    <li>Hornea a 180°C durante 25-30 minutos, hasta que la superficie esté firme y el interior un poco húmedo (puedes comprobarlo con un palillo).</li>
+                  </ol>
+              </div>
+          </div>
+      </div>
+  </div>
+
+
+                      </section>
                     </div>
                   </div>
-                  <div class="carousel-item">
-                    <img src="img/recetas.jpg" class="d-block w-100" alt="receta 3">
-                    <div class="carousel-caption d-none d-md-block">
-                      <h5>Receta 3</h5>
-                      <p>Descripción completa de la receta</p>
+                  <div class="carousel-item ">
+              
+                    <div class="carousel-caption caption-completa d-none d-md-block">
+         
+                      <section id="recipe">
+                        <div class="container">
+                          <div class="row">
+                            <!-- Title -->
+                            <div class="col-12">
+                              <h2>Rollitos de pollo con salsa de champiñones y trufa</h2>
+                            </div>
+                          </div>
+                          <div class="row vertical-align">
+                            <div class="col-12">
+                              <!-- Picture -->
+                               <div class="contenedorFlex">
+                              <!-- <div class="col-md-8 pull-left wow swing"> -->
+                                <img src="img/recetapollo.jpg" alt="foto timbal de agucate" width="150px" class="recipe-picture" />
+                            <!--   </div> -->
+                                          <!-- Info -->
+                              <div class="col-md-4 pull-right wow lightSpeedIn"> 
+                                <div class="recipe-info">
+                                    <h3>Info</h3>
+                                  <!-- Time -->
+                                    <div class="row">
+                                        <div class="col-2 text-center">
+                                        <i class="fa fa-clock-o" aria-hidden="true"></i>
+                                        </div>
+                                        <div class="col-6">Tiempo</div>
+                                      <div class="col-4">1:00 H</div>
+                                  </div>
+
+                                </div>
+
+                                  <!-- Difficulty -->
+                                  <div class="row">
+                                    <div class="col-2 text-center">
+                                      <i class="fa fa-area-chart" aria-hidden="true"></i>
+                                    </div>
+                                    <div class="col-6">Dificultad</div>
+                                    <div class="col-4">
+                                      <i class="fa fa-star" aria-hidden="true"></i>
+                            
+                                      <i class="fa fa-star" aria-hidden="true"></i>
+                                    </div>
+                                  </div>
+
+
+                                  <!-- Serves -->
+                                  <div class="row">
+                                    <div class="col-2 text-center">
+                                      <i class="fa fa-users" aria-hidden="true"></i>
+                                    </div>
+                                    <div class="col-6">Comensales</div>
+                                    <div class="col-4">2</div>
+                                  </div>
+                                </div>
+
+                              </div>
+                            </div>
+                          </div>
+                          <!-- Ingredients -->
+                          <div class="row wow slideInUp">
+                            <div class="col-12">
+                              <div class="recipe-ingredients">
+                                <h3>Ingredientes</h3>
+                                <dl class="ingredients-list">
+                                    <dd> 8 Contramuslos De Pollo de corral deshuesados</dd>
+                                  <dd> 150 gramos de Champiñones</dd>
+                                  <dd>200 mililitros de Nata Líquida</dd>
+                                  <dd> 50 mililitros de Brandy</dd>
+                                  <dd> 1 Trufa Negra</dd>
+                                </dl>
+                              </div>
+                            </div>
+                          </div>
+                          <!-- Directions -->
+                          <div class="row wow slideInUp">
+                            <div class="col-12">
+                              <div class="recipe-directions">
+                                <h3>Elaboración</h3>
+                                <ol>
+                                  <li>Limpia los contramuslos de pollo, retirando las partes grasas, lávalos y sécalos. Salpimiéntalos, espolvoréalos con tomillo lavado y picado y enróllalos. Átalos con hilo de cocina y dóralos ligeramente en una sartén con 3 cucharadas de aceite. Coloca los rollitos en una fuente refractaria y ásalos 20 minutos en el horno precalentado a 200º.</li>
+                                  <li>Pela la cebolla, córtala en juliana fina y rehógala en el aceite del pollo hasta que esté blandita. Agrega los champiñones limpios, lavados y cortados en láminas, y rehoga 4 minutos.</li>
+                                  <li>Vierte el brandy, sube el fuego y deja reducir 2 minutos. Añade la nata y cuece 2 minutos más. Salpimienta y agrega una pizca de trufa rallada. Sirve los rollitos con esta salsa y la trufa restante cortada en láminas.</li>
+                                </ol>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        </section>
                     </div>
+                  </div>
+
+
+                  <div class="carousel-item ">
+                     
+                    <div class="carousel-caption caption-completa d-none d-md-block">
+                      <section id="recipe">
+                        <div class="container">
+                          <div class="row">
+                            <!-- Title -->
+                            <div class="col-12">
+                              <h2>Timbal de ensalada de marisco</h2>
+                            </div>
+                          </div>
+                          <div class="row vertical-align">
+                            <div class="col-12">
+                              <!-- Picture -->
+                               <div class="contenedorFlex">
+                              <!-- <div class="col-md-8 pull-left wow swing"> -->
+                                <img src="img/recetatimbal.jpg" alt="foto timbal de agucate" width="150px" class="recipe-picture" />
+                            <!--   </div> -->
+                                          <!-- Info -->
+                              <div class="col-md-4 pull-right wow lightSpeedIn"> 
+                                <div class="recipe-info">
+                                    <h3>Info</h3>
+                                  <!-- Time -->
+                                    <div class="row">
+                                        <div class="col-2 text-center">
+                                        <i class="fa fa-clock-o" aria-hidden="true"></i>
+                                        </div>
+                                        <div class="col-6">Tiempo</div>
+                                      <div class="col-4">3:00 H</div>
+                                  </div>
+
+                                </div>
+
+                                  <!-- Difficulty -->
+                                  <div class="row">
+                                    <div class="col-2 text-center">
+                                      <i class="fa fa-area-chart" aria-hidden="true"></i>
+                                    </div>
+                                    <div class="col-6">Dificultad</div>
+                                    <div class="col-4">
+                                      <i class="fa fa-star" aria-hidden="true"></i>
+                                      <i class="fa fa-star" aria-hidden="true"></i>
+                                      <i class="fa fa-star" aria-hidden="true"></i>
+                                    </div>
+                                  </div>
+
+
+                                  <!-- Serves -->
+                                  <div class="row">
+                                    <div class="col-2 text-center">
+                                      <i class="fa fa-users" aria-hidden="true"></i>
+                                    </div>
+                                    <div class="col-6">Comensales</div>
+                                    <div class="col-4">5</div>
+                                  </div>
+                                </div>
+
+                              </div>
+                            </div>
+                          </div>
+                          <!-- Ingredients -->
+                          <div class="row wow slideInUp">
+                            <div class="col-12">
+                              <div class="recipe-ingredients">
+                                <h3>Ingredientes</h3>
+                                <dl class="ingredients-list">
+                                  
+
+
+                                   <dd> 12 Langostinos</dd>
+                                  <dd>12 Mejillones cocidos</dd>
+                                  <dd>6 barritas de Surimi</dd>
+                                  <dd> 12 Tomates Cherry</dd>
+                                  <dd>1 Cogollo De Lechuga</dd>
+                                </dl>
+                              </div>
+                            </div>
+                          </div>
+                          <!-- Directions -->
+                          <div class="row wow slideInUp">
+                            <div class="col-12">
+                              <div class="recipe-directions">
+                                <h3>Elaboración</h3>
+                                <ol>
+                                  <li>Coloca el huevo en un cazo, cuécelo durante 10 minutos, pélalo y trocéalo. Corta los tomates en cuartos y resérvalos con el huevo. Limpia y pica los pimientos y pela y pica la cebolla. </li>
+                                  <li>Mezcla todos los ingredientes con cebollino picado y sazona. Elabora la vinagreta con 4 cucharadas de aceite y 1 de vinagre, y aliña la preparación anterior. Agrega 6 mejillones y 6 langostinos y remueve.</li>
+                                  <li>Lava, seca y trocea el cogollo. Repártelo en la base de los platos, pon un aro encima y rellénalo con capas de surimi troceado, la mezcla de marisco aliñado, el aguacate pelado y cortado en láminas, el tomate y el huevo. Añade los demás langostinos y mejillones y aliña con más vinagreta. Retira los aros y sirve.</li>
+                                </ol>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        </section>
+                    </div>
+                  </div>
+
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+
+                  <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
                   </div>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Next</span>
-                </button>
+
               </div>
             </div>
         </div>
-
-    
-        </div>
       </section>
+
+
       <footer>
-   
-     <div class="foot">
-        <div id="textoFoot">
-            <h4>@RMSapps</h4>
+    
+    
+        <div class="container">
+          <div class="row">
+            <div class="col-md-8 col-sm-6 col-xs-12">
+              <p class="copyright-text">Copyright &copy; 2024 All Rights Reserved by
+                <a href="#">Gestor de cocina</a>.
+              </p>
+            </div>
+      
+            <div class="col-md-4 col-sm-6 col-xs-12">
+              <ul class="social-icons">
+                <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+                <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+                <li><a class="dribbble" href="#"><i class="fa fa-dribbble"></i></a></li>
+                <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>
+              </ul>
+            </div>
+          </div>
         </div>
-      </div>
       </footer>
         
 

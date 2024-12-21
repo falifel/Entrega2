@@ -3,8 +3,11 @@
     <head>
         <meta http-equiv="content-type" content="text/html; charset=UTF-8"><meta charset="UTF-8"><meta content="origin" name="referrer">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        
+        <meta name="description" content="Este es un software de gestion para todo lo necesario dentro de una cocina. Organiza tus platos, con sus recetas, escandallos, proovedores y mucho mas.">
+        <meta name="keywords" content="recetas, cocina, gastronomía, recetas de cocina, platos, comida, ingredientes, escandallos, gestor, biblioteca">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=AR+One+Sans|Aclonica">    
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">    
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
         <link rel="stylesheet" type="text/css" href="estilos/estilos.css" />
         <title>Gestor de cocina</title>
@@ -25,64 +28,79 @@
                       </a>
                       <ul class="dropdown-menu">
                         <li><a class="dropdown-item active" href="platos.html">Platos</a></li>
-                        <li><a class="dropdown-item" href="menu.html">Menu</a></li>
                         <li><a class="dropdown-item" href="recetas.html">Recetas</a></li>
                         <li><a class="dropdown-item" href="escandallos.html">Escandallos</a></li>
                       </ul>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link"  href="construccionP.html">Proovedores</a>
+                      <a class="nav-link"  href="proovedores.html">Proovedores</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="construccionB.html">Biblioteca</a>
+                      <a class="nav-link" href="biblioteca.html">Biblioteca</a>
                     </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="construccionE.html">Empleados</a>
-                    </li>
+
                   </ul>
                 </div>
               </div>
             </nav></header>
         
-        <section><div id="contenido">
+            <section class="hero-section">
+              <div class="titulo-pagina">
+                <h1 class="hero-title">PLATOS</h1>
+                <p class="hero-subtitle">Organiza los platos que formarán parte de tu menú.</p>
+              </div>
             <div class="slide">
+    
             <div id="carouselExampleCaptions" class="carousel slide">
-                <div class="carousel-indicators">
-                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                </div>
                 <div class="carousel-inner">
                   <div class="carousel-item active">
-                    <img src="img/plato.jpg" class="d-block w-100" alt="plato 1">
-                    <div class="carousel-caption d-none d-md-block">
-                      <h5>Plato 1</h5>
-                      <p>Descripción completa del plato</p>
+                    <img src="img/platomacarrones.jpg" class="d-block w-100" alt="plato de macarrones">
+                    <div class="carousel-caption  d-none d-md-block">
+                      <h5>Macarrones a la putanesca</h5>
+                      <p>Macarrones penne rigate con salsa hecha a base de cherrys confitados en ron y albahaca y queso mozzarella </p>
                     </div>
                   </div>
                   <div class="carousel-item">
-                    <img src="img/plato.jpg" class="d-block w-100" alt="plato 2">
-                    <div class="carousel-caption d-none d-md-block">
-                      <h5>Plato 2</h5>
-                      <p>Descripción completa del plato</p>
+                    <img src="img/platogambas.jpg" class="d-block w-100" alt="plato de gambas">
+                    <div class="carousel-caption  d-none d-md-block ">
+                      <h5>Gambones fritos</h5>
+                      <p>Gambones fritos en acite virgen extra, aliñados con vinagreta de limón y con mermelada de frutos rojos.</p>
                     </div>
                   </div>
                   <div class="carousel-item">
-                    <img src="img/plato.jpg" class="d-block w-100" alt="plato 3">
-                    <div class="carousel-caption d-none d-md-block">
-                      <h5>Plato 3</h5>
-                      <p>Descripción completa del plato</p>
+                    <img src="img/platomerluza.jpg" class="d-block w-100" alt="plato de merluza">
+                    <div class="carousel-caption  d-none d-md-block ">
+                      <h5>Merluza en salsa verde</h5>
+                      <p>Lomo de merluza hecho a baja temperatura y terminado en el josper. Lleva una salsa de perejil y ajo, además de una guarnición de pimientos asados</p>
                     </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="img/platospagueti.jpg" class="d-block w-100" alt="plato de spagueti">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Spaguetti con ragú de cordero</h5>
+                      <p>Spaguettis con un estofado de cordero con vino tino y salvia</p>
+                    </div>
+                  </div>
+
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+
+
+                  <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
                   </div>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Next</span>
-                </button>
+
+
               </div>
             </div>
         </div>
@@ -90,12 +108,28 @@
     
         </div>
       </section>
+
       <footer>
-     <div class="foot">
-        <div id="textoFoot">
-            <h4>@RMSapps</h4>
+    
+    
+        <div class="container">
+          <div class="row">
+            <div class="col-md-8 col-sm-6 col-xs-12">
+              <p class="copyright-text">Copyright &copy; 2024 All Rights Reserved by
+                <a href="#">Gestor de cocina</a>.
+              </p>
+            </div>
+      
+            <div class="col-md-4 col-sm-6 col-xs-12">
+              <ul class="social-icons">
+                <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+                <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+                <li><a class="dribbble" href="#"><i class="fa fa-dribbble"></i></a></li>
+                <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>
+              </ul>
+            </div>
+          </div>
         </div>
-      </div>
       </footer>
         
         
